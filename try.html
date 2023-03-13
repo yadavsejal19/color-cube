@@ -1,0 +1,58 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        body
+        {
+            background: #000000;
+            font-size: 25px;
+            text-align: center;
+
+        }
+       </style>
+</head>
+
+<body>
+    <center>
+      
+    <div id="demo"></div>
+    
+  
+</center>
+</body>
+<script>
+
+let sejal_data= " ";
+
+  
+ sejal_data+='<table border=1px>';
+
+for( let i=0;i<6;i++)
+    {
+        sejal_data+= '<tr>';
+     
+        for( let j=0;j<6;j++)
+        {
+           sejal_data += '<td></td>';
+        }
+     sejal_data+='</tr>';
+    } 
+      sejal_data+='</table>';
+
+
+
+
+sejal.innerHTML=sejal_data;
+var sejal_tds = document.querySelectorAll("td");
+sejal_tds.forEach((td)=>{
+          td.style.backgroundColor = #ffffff;
+            })
+
+</script>
+</body>
+</html>
